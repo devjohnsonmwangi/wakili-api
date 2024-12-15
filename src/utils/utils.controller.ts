@@ -26,3 +26,6 @@ export const getAllLogsByUserId = async (c: Context) => {
     }
     return c.json(logs, 200);
 };
+
+
+//being a developer is a cool thing 
