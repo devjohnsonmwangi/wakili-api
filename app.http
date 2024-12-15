@@ -1,0 +1,389 @@
+###
+POST  http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+
+    "full_name": "glory mwangi",
+    "email": "glory@gmail.com",
+    "password": "password",
+    "address": "nyeri",
+    "phone_number": "555-1234",
+    "image_url": "https://randomuser.me/api/portraits/men/1.jpg",
+    "role": "admin"
+}
+
+
+
+###
+POST http://localhost:8000/localhost:8000/ai/ask
+Content-Type: application/json
+
+{
+    "question": "What is the capital of Kenya?"
+}
+
+
+###
+PUT http://localhost:8000/users/1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcyMTYzNjQyNSwiZXhwIjoxNzIyODQ2MDI1fQ.R4pYVQsMVAMcpN5TfPfxePhglw3dm2pt-yW4MbxfU2s 
+Content-Type: application/json
+
+{
+    
+
+   
+    
+    "password": "password",
+    
+  
+}
+
+###
+POST http://localhost:8000/ai/ask
+Content-Type: application/application/json
+
+{
+    
+}
+
+
+###
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+    "email":"johnsonthuraniramwangi@gmail.com",
+    
+     "password": "johnson21"
+}
+
+###
+POST http://localhost:8000/assets
+Content-Type: application/json
+
+
+{
+    "asset_name": "Laptop",
+    "asset_type": "hp",
+    "purchase_date": "2024-12-1",
+    "cost": 1000.00,
+    "condition": "new",
+    "supplier_id": 1,
+    "warranty_period": "1 year",
+    "location": "Warehouse 1",
+    "asset_description": "Dell XPS 13",
+    "quantity": 5
+}
+
+
+
+
+
+  
+###
+POST http://localhost:8000/orders
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "order_status": "preparing",
+    "total_amount": 300.00,
+    "table_number": 1,
+    "payment_status": "paid"
+    
+}
+
+
+###
+POST http://localhost:8000/events
+Content-Type: application/json
+
+{
+    "user_id":1,
+    "case_id":1,
+    "event_tipe": "Annual Conference",
+    "event_title":"delegates meeting",
+    "event_description ":"shares share",
+    "start_time":"10:50 am",
+    "event_date": "2024-12-1",
+    "description": "A major event for networking and workshops"
+}
+
+###
+POST http://localhost:8000/payments
+Content-Type: application/json
+
+{
+  "order_id": 1,
+  "user_id": 2,
+  "payment_amount": 300.00,
+  "payment_status": "paid",
+  "payment_mode": "card"
+}
+
+
+###
+POST http://localhost:8000/menuitem
+Content-Type: application/json
+
+ {
+    "name": "Burger",
+    "description": "Beef burger with fries",
+    "price": 10.00,
+    "category": "chips",
+    "image_url": "https://randomuser.me/api/portraits"
+
+ }
+
+
+
+
+###
+POST http://localhost:8000/orderitems
+Content-Type: application/json
+
+{
+    "order_id": 1,
+    "item_id": 1,
+    "quantity": 2,
+    "item_price": 100.00,
+    "total_price": 200.00,
+    "special_requests": "No onions"
+  
+
+}
+
+###
+POST http://localhost:8000/cases
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "case_type": "civil",
+  "case_status": "open",
+  "case_description": "This is a description of the case.",
+  "case_number": "CASE123456",
+  "case_track_number": "TRACK987654",
+  "fee": 1500.50,
+  "payment_status": "pending"
+}
+
+
+
+###
+POST http://localhost:8000/feedback
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "rating": 4,
+    "comments": "The lawyers are brilliant"
+
+}
+
+
+###
+POST http://localhost:8000/rooms
+Content-Type: application/json
+
+{
+  "room_number":"23",
+  "room_type":"single",
+  "description":"single bed",
+  "price_per_night": "3000",
+  "is_available": "true",
+  "max_occupancy": "3"
+
+}
+
+###
+POST http://localhost:8000/reservations
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcyMTYzNjQyNSwiZXhwIjoxNzIyODQ2MDI1fQ.R4pYVQsMVAMcpN5TfPfxePhglw3dm2pt-yW4MbxfU2s
+Content-Type: application/json    
+
+{
+    "user_id": 1,
+    "reservation_type": "room",
+    "room_id": 1,
+    "reservation_date": "2024-12-01",
+    "check_in": "2024-12-05",
+    "check_out": "2024-12-10",
+    "number_of_people": 2,
+    "special_requests": "Ocean view room, non-smoking"
+}
+
+ 
+
+###
+POST http://localhost:8000/payments
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcyMTYzNjQyNSwiZXhwIjoxNzIyODQ2MDI1fQ.R4pYVQsMVAMcpN5TfPfxePhglw3dm2pt-yW4MbxfU2s
+Content-Type: application/json
+
+{
+
+
+  "order_id": "19",
+  
+  "amount": 300.00
+
+ 
+  
+ 
+ 
+}
+### Test endpoint for adding a new log
+POST http://localhost:8000/log
+Content-Type: application/json
+
+{
+    "message": "User logged in",
+    "user_id": 1,
+    "action": "login"
+}
+
+###
+
+### Test endpoint for getting all logs for a user
+GET http://localhost:8000/users/1/
+Accept: application/json
+
+###
+
+### Test endpoint for adding a new asset
+POST http://localhost:8000/assets
+Content-Type: application/json
+
+{
+    "asset_name": "Laptop",
+    "asset_type":"hp",
+    "description": "Dell XPS 13",
+    "quantity": 5,
+    "location": "Warehouse 1"
+}
+
+###
+
+### Test endpoint for getting all assets
+GET http://localhost:8000/assets
+Accept: application/json
+
+###
+
+### Test endpoint for getting an asset by ID
+GET http://localhost:8000/assets/3
+Accept: application/json
+
+###
+
+### Test endpoint for updating an asset
+PUT http://localhost:8000/assets/3
+Content-Type: application/json
+
+{
+    "name": "Laptop",
+    "description": "Dell XPS 15",
+    "quantity": 10,
+    "location": "Warehouse 2"
+}
+
+###
+
+### Test endpoint for deleting an asset
+DELETE http://localhost:8000/assets/3
+Accept: application/json
+
+###
+
+### Test endpoint for adding a new supplier
+POST http://localhost:8000/suppliers
+Content-Type: application/json
+
+{
+    "name": "Supplier A",
+    "contact_name": "email@example.com",
+    "contact_email": "email@example.com",
+    "contact_phone": "555-1234",
+    "address": "123 Main St, City, Country"
+}
+
+###
+
+### Test endpoint for getting all suppliers
+GET http://localhost:8000/suppliers
+Accept: application/json
+
+###
+
+### Test endpoint for getting a supplier by ID
+GET http://localhost:3000/suppliers/1
+Accept: application/json
+
+###
+
+### Test endpoint for updating a supplier
+PUT http://localhost:8000/suppliers/1
+Content-Type: application/json
+
+{
+    "name": "Supplier A",
+    "contact_name": "email@example.com",
+    "contact_email": "email@example.com",
+    "contact_phone": "555-1234",
+    "address": "123 Main St, City, Country"
+}
+
+
+###
+
+### Test endpoint for deleting a supplier
+DELETE http://localhost:8000/suppliers/1
+Accept: application/json
+
+###
+
+### Test endpoint for adding a new event
+POST http://localhost:8000/events
+Content-Type: application/json
+
+{
+    "event_name": "Annual Conference",
+    "event_date": "2024-12-15T10:00:00",
+    "location": "Convention Center, City",
+    "description": "A major event for networking and workshops"
+}
+
+###
+
+### Test endpoint for getting all events
+GET http://localhost:8000/cases
+
+###
+DELETE http://localhost:8000/ticket/1
+
+
+###
+
+### Test endpoint for getting an event by ID
+GET http://localhost:8000/events/1
+Accept: application/json
+
+###
+
+### Test endpoint for updating an event
+PUT http://localhost:8000/cases/1
+Content-Type: application/json
+
+{
+ "fee":200
+}
+
+###
+
+### Test endpoint for deleting an event
+DELETE http://localhost:3000/events/1
+Accept: application/json
+
+###
+DELETE http://localhost:8000/ticket/1
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcyMTYzNjQyNSwiZXhwIjoxNzIyODQ2MDI1fQ.R4pYVQsMVAMcpN5TfPfxePhglw3dm2pt-yW4MbxfU2s 

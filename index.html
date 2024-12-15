@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Rental Management System API</title>
+    <style>
+      /* Define color variables */
+      :root {
+        --app-bg-color: #f5f5f5;
+        --primary-color: #4caf50;
+        --secondary-color: #f44336;
+        --font-family: Arial, sans-serif;
+      }
+
+      body {
+        font-family: var(--font-family);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: var(--app-bg-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 1rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 2rem;
+      }
+
+      section {
+        background-color: white;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        margin-top: 0;
+        color: var(--primary-color);
+      }
+
+      code {
+        background-color: var(--app-bg-color);
+        padding: 2px 5px;
+        border-radius: 3px;
+        color: var(--secondary-color);
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: var(--primary-color);
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Vehicle Rental Management System API</h1>
+    </header>
+    <main>
+      <section>
+        <h2>About the API</h2>
+        <p>
+          Welcome to the Vehicle Rental Management System API. This API allows
+          you to interact with our vehicle rental platform, including user
+          registration, login, browsing available vehicles, and booking rentals.
+        </p>
+      </section>
+      <section>
+        <h2>API Endpoints</h2>
+        <ul>
+          <li><code>POST /register</code>: Register a new user</li>
+          <li><code>POST /login</code>: Login as an existing user</li>
+          <li>
+            <code>GET /vehicles</code>: Retrieve a list of available vehicles
+          </li>
+          <li><code>POST /bookings</code>: Create a new booking</li>
+          <li><code>GET /bookings</code>: Retrieve user bookings</li>
+          <li><code>POST /payments</code>: Process a payment</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or need assistance with the API, please
+          contact our support team.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Vehicle Rental Management System. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
